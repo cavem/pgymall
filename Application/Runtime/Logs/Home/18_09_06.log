@@ -1,0 +1,701 @@
+[ 2018-09-06T09:28:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2018-09-06T09:28:42+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2018-09-06T09:28:45+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2018-09-06T09:31:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-09-06T09:31:38+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-09-06T09:31:48+08:00 ] 127.0.0.1 /Index/detail.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `products` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001947s ]
+
+[ 2018-09-06T09:31:57+08:00 ] 127.0.0.1 /Index/detail.html?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `products` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001843s ]
+
+[ 2018-09-06T09:32:52+08:00 ] 127.0.0.1 /Index/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `products` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2018-09-06T09:33:03+08:00 ] 127.0.0.1 /Index/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `products` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-09-06T09:33:11+08:00 ] 127.0.0.1 /Index/detail.html?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `products` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2018-09-06T09:33:20+08:00 ] 127.0.0.1 /Index/prolist.html?type=8%E5%A4%A7%E5%90%8D%E9%85%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 0,10   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2018-09-06T09:33:26+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2018-09-06T09:33:26+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-09-06T09:33:47+08:00 ] 127.0.0.1 /Index/prolist.html?type=53%E4%BC%98%E5%90%8D%E9%85%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%53优名酒%' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%53优名酒%' LIMIT 0,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-09-06T09:33:51+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-09-06T09:33:52+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+
+[ 2018-09-06T09:34:02+08:00 ] 127.0.0.1 /Index/prolist.html?type=8%E5%A4%A7%E5%90%8D%E9%85%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 0,10   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2018-09-06T09:35:01+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0041s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2018-09-06T09:35:01+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-09-06T10:35:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-09-06T10:35:21+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-09-06T11:02:08+08:00 ] 127.0.0.1 /Product/getstandard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载控制器:Product
+
+[ 2018-09-06T11:02:13+08:00 ] 127.0.0.1 /Product/getstandard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+ERR: 无法加载控制器:Product
+
+[ 2018-09-06T11:02:19+08:00 ] 127.0.0.1 /Product/getstandard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载控制器:Product
+
+[ 2018-09-06T14:00:08+08:00 ] 127.0.0.1 /Public/assets/bootstrap-datetimepicker.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-09-06T14:00:21+08:00 ] 127.0.0.1 /Public/assets/bootstrap-datetimepicker.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-09-06T14:19:35+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-09-06T14:19:35+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-09-06T14:19:47+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-09-06T14:20:58+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-09-06T14:20:58+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-09-06T14:21:02+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-09-06T14:21:15+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-09-06T14:22:21+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-09-06T14:22:21+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-09-06T14:22:22+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+
+[ 2018-09-06T14:22:32+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-09-06T14:22:50+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-09-06T14:22:50+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+
+[ 2018-09-06T14:23:22+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-09-06T14:25:02+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-09-06T14:25:02+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-09-06T14:25:16+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-09-06T14:25:16+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-09-06T14:29:21+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-09-06T14:29:23+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-09-06T14:40:12+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+
+[ 2018-09-06T14:40:16+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+
+[ 2018-09-06T14:41:22+08:00 ] 127.0.0.1 /Public/assets/images/calendar-prev-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2018-09-06T14:41:24+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-09-06T14:46:22+08:00 ] 127.0.0.1 /Public/assets/images/calendar-next-hover.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-09-06T16:18:25+08:00 ] 127.0.0.1 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0852s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-09-06T16:18:25+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-09-06T16:23:56+08:00 ] 127.0.0.1 /Index/detail.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `products` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-09-06T16:35:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-09-06T16:35:16+08:00 ] 127.0.0.1 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-09-06T16:35:17+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2018-09-06T16:35:38+08:00 ] 127.0.0.1 /Index/prolist.html?type=8%E5%A4%A7%E5%90%8D%E9%85%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `type` LIKE '%8大名酒%' LIMIT 0,10   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\50f822ae40e276b9cbb510a183f19499.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+
+[ 2018-09-06T16:35:43+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 )  [ RunTime:0.0045s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `products` WHERE `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-09-06T16:35:43+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-09-06T16:35:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+

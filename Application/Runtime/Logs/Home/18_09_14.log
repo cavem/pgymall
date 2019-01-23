@@ -1,0 +1,44 @@
+[ 2018-09-14T10:01:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0682s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001674s ]
+
+[ 2018-09-14T10:01:55+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-09-14T10:02:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-09-14T10:02:39+08:00 ] 127.0.0.1 /Public/assets/images/menu-active.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+

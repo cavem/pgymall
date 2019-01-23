@@ -1,0 +1,39 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+</style>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <div class="form-line w50 fl">
+            <span class="form-label">出库原因：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="status">
+                    <option>喝掉</option>
+                    <option>卖掉</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl" style="height: initial;">
+            <span class="form-label">出库数量：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="num">
+            </div>
+            <input class="tnum" name="tnum" type="hidden" value="{$num}">
+            <p style="margin-left: 150px;">库存：<b>{$num}</b> 瓶</p>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+<include file="Public/footer" title="pgyidc" />

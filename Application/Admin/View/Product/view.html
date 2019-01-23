@@ -1,0 +1,74 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+.col666{color: #666;}
+</style>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <table class="table table-bordered">
+        <caption>产品信息</caption>
+        <tbody>
+            <tr>
+                <td rowspan="7" style="width: 150px;"><img src="{$proinfo.img}" style="max-width: 150px;"></td>
+                <td class="col666">产品类型</td>
+                <td>{$proinfo.type}</td>
+                <td class="col666">产品名称</td>
+                <td>{$proinfo.name}</td>
+            </tr>
+            <tr>
+                <td class="col666">生产厂家</td>
+                <td>{$proinfo.vender}</td>
+                <td class="col666">年份</td>
+                <td>{$proinfo.time}年</td>
+            </tr>
+            <tr>
+                <td class="col666">香型</td>
+                <td>{$proinfo.smell}</td>
+                <td class="col666">执行标准</td>
+                <td >{$proinfo.standard}</td>
+            </tr>
+            <tr>
+                <td class="col666">酒线酒花</td>
+                <td>{$proinfo.line}</td>
+                <td class="col666">度数</td>
+                <td>{$proinfo.degree}</td>
+            </tr>
+            <tr>
+                <td class="col666">数量</td>
+                <td>{$proinfo.num}</td>
+                <td class="col666">状态</td>
+                <td>{$proinfo.status}</td>
+            </tr>
+            <tr>
+                <td class="col666">描述</td>
+                <td colspan="3">{$proinfo.descr}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered">
+        <caption>购买信息</caption>
+        <thead>
+            <tr>
+                <th>购买时间</th>
+                <th>购买人</th>
+                <th>购买价格</th>
+                <th>出售价格</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{$proinfo.buytime}</td>
+                <td>{$proinfo.buyperson}</td>
+                <td>{$proinfo.price}元</td>
+                <td>{$proinfo.saleprice}元</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<include file="Public/footer" title="pgyidc" />

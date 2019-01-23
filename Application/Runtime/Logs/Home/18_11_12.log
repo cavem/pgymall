@@ -1,0 +1,265 @@
+[ 2018-11-12T18:27:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.1056s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2018-11-12T18:27:24+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-11-12T18:27:31+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-11-12T18:27:42+08:00 ] 127.0.0.1 /Index/prolist.html?type=8%E5%A4%A7%E5%90%8D%E9%85%92
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\50f822ae40e276b9cbb510a183f19499.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-11-12T18:27:45+08:00 ] 127.0.0.1 /Index/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `products` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001621s ]
+
+[ 2018-11-12T18:27:55+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2018-11-12T18:27:55+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-11-12T18:28:22+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2018-11-12T18:28:22+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-11-12T18:28:27+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-11-12T18:28:27+08:00 ] 127.0.0.1 /Public/assets/image/banner2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-11-12T18:28:31+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `products` WHERE ( isnav=1 AND status='库存' )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%8大名酒%' LIMIT 4   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%17大名酒%' LIMIT 4   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%53优名酒%' LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `products` WHERE `status` = '库存' AND `type` LIKE '%其它%' LIMIT 4   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 170 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-11-12T18:28:39+08:00 ] 127.0.0.1 /Index/detail.html?id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `products` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2018-11-12T18:28:56+08:00 ] 127.0.0.1 /Index/prolist.html?type=%E5%85%B6%E5%AE%83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `status` = '库存' AND `type` LIKE '%其它%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `products` WHERE (  `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' ) AND `status` = '库存' AND `type` LIKE '%其它%' LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\50f822ae40e276b9cbb510a183f19499.php 第 68 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgymall\Application\Runtime\Cache\Home\50f822ae40e276b9cbb510a183f19499.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+

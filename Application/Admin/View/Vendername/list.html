@@ -1,0 +1,73 @@
+<include file="Public/header" title="pgyidc" />
+<script>
+    $(function(){
+        $('.add').click(function(){
+            var confirm=function(index,layero){
+                var body = layer.getChildFrame('body',index);
+                var formdata = body.find('.mform').serialize();
+                layer.msg('请稍等...',{icon:16});
+                $.post('/Admin/Vendername/new',formdata,function(data,status){
+                    if(data==0){
+                        layer.msg('添加成功',{icon:1});
+                        window.location.reload();
+                    }else{
+                        layer.msg('添加失败',{icon:2});
+                        window.location.reload();
+                    }
+                })
+            }
+            myalert('添加厂家','900px','400px',"{:U('Vendername/new')}",confirm);
+        })
+        $('.edit').click(function(){
+            var id=$(this).closest('tr').children('td:first').text();
+            var confirm=function(index,layero){
+                var body = layer.getChildFrame('body',index);
+                var formdata = body.find('.mform').serialize();
+                layer.msg('请稍等...',{icon:16});
+                $.post('/Admin/Vendername/edit',formdata+"&id="+id,function(data,status){
+                    if(data==0){
+                        layer.msg('修改成功',{icon:1});
+                        window.location.reload();
+                    }else{
+                        layer.msg('修改失败',{icon:2});
+                        window.location.reload();
+                    }
+                })
+            }
+            myalert('编辑厂家','900px','400px',"{:U('Vendername/edit')}"+"?id="+id,confirm);
+        })
+    })
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-list-ul"></i> 厂家列表</span>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <button class="btn btn-primary add"><i class="fa fa-plus"></i> 添加厂家</button>
+        </div>
+        <div class="lsit-wrap">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>厂家</th>
+                        <th>产品</th>
+                        <th style="width: 100px;">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="venderlist" id="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.vender}</td>
+                        <td>{$vo.name}</td>
+                        <td><button class="btn btn-primary edit"><i class="fa fa-pencil-square-o"></i> 编辑</button></td>
+                    </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

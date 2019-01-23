@@ -1,0 +1,175 @@
+<include file="public/header" title="pgymall" />
+<style>
+	.item-content{width: 1226px;margin: 0 auto;color: #fff;padding: 80px;}
+	.item-content-text{width: 50%;float: left;}
+	.item-content-text .descp{color: #736f6f;}
+	.item-content-text .pric{font-size: 28px;color: #dc9919;font-weight: bold;}
+	.item-content-img{width: 50%;float: left;}
+	.item-content-img img{max-height: 390px;}
+</style>
+		<!-- start banner_y -->
+		<div class="banner_y center" style="width: 100%;height: 550px;">
+			<div class="nav-right fl" style="width: 100%;min-width: 1226px;height: 550px;background:url(__PUBLIC__/assets/images/slider_bg.jpg) #555 no-repeat center;background-size:cover;">
+				<div id="myCarousel" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators">
+							<volist name="navlist" id="vo" key="k">
+								<li data-target="#myCarousel" data-slide-to="{$k-1}" <if condition="$k eq '1'">class="active"</if>></li>
+							</volist>
+						</ol>   
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner">
+							<volist name="navlist" id="vo" key="k">
+							<div class="item <if condition='$k eq 1'>active</if>">
+								<div class="item-content">
+									<div class="item-content-text">
+										<h1 class="wow fadeInUp" data-wow-delay="0.5s">{$vo.name}</h1>
+										<p class="mt50 descp wow fadeInUp" data-wow-delay="0.5s">{$vo.descr}</p>
+										<p class="mt50 pric wow bounceInUp" data-wow-delay="0.5s">￥{$vo.saleprice}</p>
+										<a class="mt20 mbtn wow bounceIn" data-wow-delay="0.5s" href="{:U('Index/detail')}?id={$vo.id}" target="_blank">查看</a>
+									</div>
+									<div class="item-content-img">
+										<img class="fr wow bounceInRight" data-wow-delay="0.5s" src="{$vo.img}">
+									</div>
+								</div>
+							</div>
+							</volist>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="carousel-control left" href="#myCarousel" 
+							data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#myCarousel" 
+							data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+		<!-- start danpin -->
+		<div class="peijian w">
+			<div class="biaoti center wow fadeInUp">8大名酒</div>
+			<div class="main center">
+				<div class="content">
+					<if condition="$balist[0] eq ''">
+						<div class="remen fl wow zoomIn">
+							<img src="__PUBLIC__/assets/images/empty.png" style="margin-top: 90px;">
+							<p>暂无产品</p>
+						</div>
+					<else />
+					<volist name="balist" id="vo">
+					<div class="remen fl wow zoomIn">
+						<div class="xinpin"><span>精品</span></div>
+						<div class="tu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" ><img style="max-width: 160px;" src="{$vo.img}"></a></div>
+						<div class="miaoshu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" >{$vo.name}</a></div>
+						<div class="jiage">{$vo.saleprice}元</div>
+						<div class="pingjia">{$vo.time}年</div>
+						<div class="piao">
+							<a href="{:U('Index/detail')}?id={$vo.id}" target="_blank">
+								<span>{$vo.descr}</span>
+							</a>
+						</div>
+					</div>
+					</volist>
+					</if>
+					<div class="remen fl wow zoomIn">
+						<div class="" style="margin-top: 79px;"><a href="{:U('Index/prolist')}?type=8大名酒"><img src="__PUBLIC__/assets/images/liulangengduo.png" alt=""></a></div>					
+					</div>
+					<div class="clear"></div>
+				</div>				
+			</div>
+		</div>
+		<div class="peijian w">
+			<div class="biaoti center wow fadeInUp">17大名酒</div>
+			<div class="main center">
+				<div class="content">
+					<if condition="$sqlist[0] eq ''">
+						<div class="remen fl wow zoomIn">
+							<img src="__PUBLIC__/assets/images/empty.png" style="margin-top: 90px;">
+							<p>暂无产品</p>
+						</div>
+					<else />
+					<volist name="sqlist" id="vo">
+					<div class="remen fl wow zoomIn">
+						<div class="xinpin"><span>精品</span></div>
+						<div class="tu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" ><img style="max-width: 160px;" src="{$vo.img}"></a></div>
+						<div class="miaoshu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" >{$vo.name}</a></div>
+						<div class="jiage">{$vo.saleprice}元</div>
+						<div class="pingjia">{$vo.time}年</div>
+						<div class="piao">
+							<a href="{:U('Index/detail')}?id={$vo.id}" target="_blank">
+								<span>{$vo.descr}</span>
+							</a>
+						</div>
+					</div>
+					</volist>
+					</if>
+					<div class="remen fl wow zoomIn">
+						<div class="" style="margin-top: 79px;"><a href="{:U('Index/prolist')}?type=17大名酒"><img src="__PUBLIC__/assets/images/liulangengduo.png" alt=""></a></div>					
+					</div>
+					<div class="clear"></div>
+				</div>				
+			</div>
+		</div>
+		<div class="peijian w">
+			<div class="biaoti center wow fadeInUp">53优名酒</div>
+			<div class="main center">
+				<div class="content">
+					<if condition="$wslist[0] eq ''">
+						<div class="remen fl wow zoomIn">
+							<img src="__PUBLIC__/assets/images/empty.png" style="margin-top: 90px;">
+							<p>暂无产品</p>
+						</div>
+					<else />
+					<volist name="wslist" id="vo">
+					<div class="remen fl wow zoomIn">
+						<div class="xinpin"><span>精品</span></div>
+						<div class="tu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" ><img style="max-width: 160px;" src="{$vo.img}"></a></div>
+						<div class="miaoshu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" >{$vo.name}</a></div>
+						<div class="jiage">{$vo.saleprice}元</div>
+						<div class="pingjia">{$vo.time}年</div>
+						<div class="piao">
+							<a href="{:U('Index/detail')}?id={$vo.id}" target="_blank">
+								<span>{$vo.descr}</span>
+							</a>
+						</div>
+					</div>
+					</volist>
+					</if>
+					<div class="remen fl wow zoomIn">
+						<div class="" style="margin-top: 79px;"><a href="{:U('Index/prolist')}?type=53优名酒"><img src="__PUBLIC__/assets/images/liulangengduo.png" alt=""></a></div>					
+					</div>
+					<div class="clear"></div>
+				</div>				
+			</div>
+		</div>
+		<div class="peijian w">
+			<div class="biaoti center wow fadeInUp">其它</div>
+			<div class="main center">
+				<div class="content">
+					<if condition="$qtlist[0] eq ''">
+						<div class="remen fl wow zoomIn">
+							<img src="__PUBLIC__/assets/images/empty.png" style="margin-top: 90px;">
+							<p>暂无产品</p>
+						</div>
+					<else />
+					<volist name="qtlist" id="vo">
+						<div class="remen fl wow zoomIn">
+							<div class="xinpin"><span>精品</span></div>
+							<div class="tu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" ><img style="max-width: 160px;" src="{$vo.img}"></a></div>
+							<div class="miaoshu"><a href="{:U('Index/detail')}?id={$vo.id}" target="_blank" >{$vo.name}</a></div>
+							<div class="jiage">{$vo.saleprice}元</div>
+							<div class="pingjia">{$vo.time}年</div>
+							<div class="piao">
+								<a href="{:U('Index/detail')}?id={$vo.id}" target="_blank">
+									<span>{$vo.descr}</span>
+								</a>
+							</div>
+						</div>
+					</volist>
+					</if>
+					<div class="remen fl wow zoomIn">
+						<div class="" style="margin-top: 79px;"><a href="{:U('Index/prolist')}?type=其它"><img src="__PUBLIC__/assets/images/liulangengduo.png" alt=""></a></div>					
+					</div>
+					<div class="clear"></div>
+				</div>				
+			</div>
+		</div>
+<include file="public/footer" title="pgymall" />

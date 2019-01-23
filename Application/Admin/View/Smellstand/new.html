@@ -1,0 +1,25 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+    /*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+</style>
+<form class="mform">
+    <div class="form-line fl">
+        <span class="form-label">香型：</span>
+        <div class="form-content">
+            <input class="form-control" type="text" name="smell">
+        </div>
+    </div>
+    <div class="form-line fl">
+        <span class="form-label" style="position: relative;bottom: 30px;">执行标准：</span>
+        <div class="form-content">
+            <textarea class="form-control" rows="3" name="standard"></textarea>
+        </div>
+        <p style="margin-left: 150px;">注：多个执行标准请用“<span style="color: red;">||</span>”隔开</p>
+    </div>
+</form>
+<include file="Public/footer" title="pgyidc" />

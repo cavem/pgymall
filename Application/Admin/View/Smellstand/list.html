@@ -1,0 +1,73 @@
+<include file="Public/header" title="pgyidc" />
+<script>
+    $(function(){
+        $('.semll-add').click(function(){
+            var confirm=function(index,layero){
+                var body = layer.getChildFrame('body',index);
+                var formdata = body.find('.mform').serialize();
+                layer.msg('请稍等...',{icon:16});
+                $.post('/Admin/Smellstand/new',formdata,function(data,status){
+                    if(data==0){
+                        layer.msg('添加成功',{icon:1});
+                        window.location.reload();
+                    }else{
+                        layer.msg('添加失败',{icon:2});
+                        window.location.reload();
+                    }
+                })
+            }
+            myalert('添加香型','900px','400px',"{:U('Smellstand/new')}",confirm);
+        })
+        $('.smell-edit').click(function(){
+            var id=$(this).closest('tr').children('td:first').text();
+            var confirm=function(index,layero){
+                var body = layer.getChildFrame('body',index);
+                var formdata = body.find('.mform').serialize();
+                layer.msg('请稍等...',{icon:16});
+                $.post('/Admin/Smellstand/edit',formdata+"&id="+id,function(data,status){
+                    if(data==0){
+                        layer.msg('修改成功',{icon:1});
+                        window.location.reload();
+                    }else{
+                        layer.msg('修改失败',{icon:2});
+                        window.location.reload();
+                    }
+                })
+            }
+            myalert('添加香型','900px','400px',"{:U('Smellstand/edit')}"+"?id="+id,confirm);
+        })
+    })
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-list-ul"></i> 香型列表</span>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <button class="btn btn-primary semll-add"><i class="fa fa-plus"></i> 添加香型</button>
+        </div>
+        <div class="lsit-wrap">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>香型</th>
+                        <th>执行标准</th>
+                        <th style="width: 100px;">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="smelllist" id="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.smell}</td>
+                        <td>{$vo.standard}</td>
+                        <td><button class="btn btn-primary smell-edit"><i class="fa fa-pencil-square-o"></i> 编辑</button></td>
+                    </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

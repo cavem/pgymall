@@ -1,0 +1,35 @@
+<include file="public/header" title="pgymall" />
+    <script>
+        $(function(){
+            $('img').click(function(){
+                window.open($(this).attr('src'));
+            })
+        })
+    </script>
+    <style>
+       img{transition: all .5s;cursor: pointer;opacity: 0.9;}
+       img:hover{opacity: 1;}
+    </style>
+    <!-- xiangqing -->
+    <div class="xiangqing">
+        <div class="neirong w">
+            <div class="xiaomi6 fl">{$proinfo.name}</div>
+            <div class="clear"></div>
+        </div>	
+    </div>
+    
+    <div class="jieshao mt20 w">
+        <div class="left fl" style="text-align: center;line-height: 568px;"><img src="{$proinfo.img}" style="max-height: 566px;max-width: 560px;"></div>
+        <div class="right fr" style="padding: 20px;">
+            <h3>{$proinfo.name}</h3>
+            <p class="mt20"><span style="color: #888;">厂家：</span>{$proinfo.vender}</p>
+            <p class="mt10"><span style="color: #888;">年份：</span>{$proinfo.time}年</p>
+            <p class="mt10"><span style="color: #888;">香型：</span>{$proinfo.smell}</p>
+            <p class="mt10"><span style="color: #888;">描述：</span>{$proinfo.descr}</p>
+            <p class="mt10"><span style="color: #888;">数量：</span>{$proinfo.num}瓶</p>
+            <p class="mt10"><span style="color: #888;">出售价格：</span><span style="color: red;font-size: 24px;">￥{$proinfo.saleprice}</span> 元</p>
+            <a class="mbtn mt20" href="" style="max-width: 150px;">咨询购买</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+<include file="public/footer" title="pgymall" />

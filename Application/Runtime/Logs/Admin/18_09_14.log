@@ -1,0 +1,190 @@
+[ 2018-09-14T10:02:02+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-09-14T10:02:17+08:00 ] 127.0.0.1 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0485s ]
+SQL: SELECT * FROM `admin_user` WHERE `AdminName` = 'admin' AND `AdminPwd` = 'pgyidc2018'  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `admin_user` WHERE `AdminName` = 'admin' AND `AdminPwd` = 'pgyidc2018' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-09-14T10:02:17+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-09-14T10:02:18+08:00 ] 127.0.0.1 /Admin/Product/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SELECT `price`,`num` FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0  [ RunTime:0.0016s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 AND `type` LIKE '%8大名酒%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 AND `type` LIKE '%17大名酒%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 AND `type` LIKE '%53优名酒%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `products` WHERE (  `type` LIKE '%%' OR `name` LIKE '%%' OR `tel` LIKE '%%' OR `vender` LIKE '%%' OR `time` LIKE '%%' OR `buyperson` LIKE '%%' OR `smell` LIKE '%%' OR `standard` LIKE '%%' OR `line` LIKE '%%' OR `degree` LIKE '%%' OR `status` LIKE '%%' ) AND `status` = '库存' AND `id` <> 0 AND `type` LIKE '%其它%' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `smell_stand` [ RunTime:0.0373s ]
+SQL: SELECT `smell` FROM `smell_stand`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2018-09-14T10:02:40+08:00 ] 127.0.0.1 /Admin/Smellstand/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `smell_stand` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `smell_stand`  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2018-09-14T10:02:41+08:00 ] 127.0.0.1 /Admin/Vendername/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `vender_name` [ RunTime:0.0343s ]
+SQL: SELECT * FROM `vender_name`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2018-09-14T10:03:01+08:00 ] 127.0.0.1 /Admin/Vendername/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2018-09-14T10:04:08+08:00 ] 127.0.0.1 /Admin/Product/view.html?name=cc&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `products` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001943s ]
+
+[ 2018-09-14T10:04:17+08:00 ] 127.0.0.1 /Admin/Product/viewimg.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0130s ]
+SQL: SELECT `img` FROM `products` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+
